@@ -1,5 +1,5 @@
-let assert = require('power-assert');
-let SmoothScroll = require('../lib/smoothscroll');
+import assert from 'power-assert';
+import SmoothScroll from '../lib/smoothscroll';
 
 mocha.setup('bdd');
 window.onload = () => {

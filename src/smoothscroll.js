@@ -2,7 +2,7 @@
 
 import $ from 'jquery';
 
-export class SmoothScroll {
+export default class SmoothScroll {
 
   static addEasing(name, func) {
     if ($.easing[name] != null) return;

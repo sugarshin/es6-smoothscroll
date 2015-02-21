@@ -2,24 +2,25 @@
 
 [![Build Status](https://travis-ci.org/sugarshin/es6-smoothscroll.svg?branch=master)](https://travis-ci.org/sugarshin/es6-smoothscroll) [![Coverage Status](https://coveralls.io/repos/sugarshin/es6-smoothscroll/badge.svg)](https://coveralls.io/r/sugarshin/es6-smoothscroll) [![GitHub version](https://badge.fury.io/gh/sugarshin%2Fes6-smoothscroll.svg)](http://badge.fury.io/gh/sugarshin%2Fes6-smoothscroll) [![License](http://img.shields.io/:license-mit-blue.svg)](http://sugarshin.mit-license.org/)
 
-SmoothScroll
+ES6 SmoothScroll
 
 ```shell
-npm i sugarshin/es6-smoothscroll
+npm i es6-smoothscroll
 ```
 
 ## Usage
 
 ```javascript
-import SmoothScroll from 'smoothscroll';
+import SmoothScroll from 'es6-smoothscroll';
 
-new SmoothScroll(element);
+new SmoothScroll(element, opts);
 ```
 ### Config
 
-default
+options
 
 ```javascript
+// default
 {
   speed: 500,
   easingName: null,
@@ -31,6 +32,10 @@ default
 
 ## Contributing
 
+[Babel](//babeljs.io/)
+
+[Browserify](//browserify.org/)
+
 [mocha-phantomjs](//github.com/metaskills/mocha-phantomjs)
 
 [power-assert](//github.com/twada/power-assert)
@@ -38,6 +43,10 @@ default
 ```shell
 npm test
 ```
+
+**attention**
+
+currently no test
 
 ## License
 

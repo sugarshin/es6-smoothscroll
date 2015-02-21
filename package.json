@@ -1,6 +1,6 @@
 {
   "name": "es6-smoothscroll",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SmoothScroll",
   "repository": "git@github.com:sugarshin/es6-smoothscroll.git",
   "main": "lib/smoothscroll.js",
