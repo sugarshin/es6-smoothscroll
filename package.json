@@ -1,0 +1,36 @@
+{
+  "name": "es6-smoothscroll",
+  "version": "0.0.1",
+  "description": "SmoothScroll",
+  "repository": "git@github.com:sugarshin/es6-smoothscroll.git",
+  "main": "lib/smoothscroll.js",
+  "files": [
+    "lib",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "start": "babel src/smoothscroll.js -w -o lib/smoothscroll.js",
+    "pretest": "browserify -t babelify test/test.es6 -o test/test.js",
+    "test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/index.html",
+    "build": "uglifyjs lib/smoothscroll.js -cm --wrap 'SmoothScroll' -o lib/smoothscroll.min.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": "sugarshin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^4.4.3",
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "mocha": "^2.1.0",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.15",
+    "power-assert": "^0.10.2",
+    "uglify-js": "^2.4.16"
+  },
+  "dependencies": {
+    "jquery": "^2.1.3"
+  }
+}
